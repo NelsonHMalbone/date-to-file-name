@@ -19,4 +19,9 @@ for filename in filenames:
         content = file.read()
         words = content.split() # spliting each word from content in file
         word_count = len(words) # getting total amount of words
-        print(word_count)
+        #print(word_count)
+
+    # creating a new file name
+    new_filename = f"{filename[:-4]}-{word_count}.txt"
+    # [:-4] taking the last .txt out of the equation
+    print(new_filename)
