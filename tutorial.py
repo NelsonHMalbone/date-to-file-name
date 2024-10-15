@@ -26,4 +26,10 @@ for filename in filenames:
     # creating a new file name
     new_filename = f"{filename[:-4]}-{word_count}-{day}.txt"
     # [:-4] taking the last .txt out of the equation
-    print(new_filename)
+    # creating a new file path
+    new_filepath = os.path.join(directory, new_filename)
+    # now to run program to rename files
+    # requires two args
+    # old file path(filepath) to new filepath(new_filepath)
+    os.rename(filepath, new_filepath)
+    print(f"filepath converted from {filepath} to {new_filepath}")
