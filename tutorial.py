@@ -20,8 +20,10 @@ for filename in filenames:
         words = content.split() # spliting each word from content in file
         word_count = len(words) # getting total amount of words
         #print(word_count)
-
+    # get the current day
+    #day = datetime.now() # cant use in new_filename need to convert to str
+    day = datetime.now().strftime("%A")
     # creating a new file name
-    new_filename = f"{filename[:-4]}-{word_count}.txt"
+    new_filename = f"{filename[:-4]}-{word_count}-{day}.txt"
     # [:-4] taking the last .txt out of the equation
     print(new_filename)
