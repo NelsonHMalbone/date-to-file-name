@@ -7,7 +7,7 @@ directory = 'files_project'
 # getting a list of the dir from the directory variable
 filepath = os.listdir(directory)
 # ran a test to see if sys can see the files inside dic
-print(filepath)
+#print(filepath)
 
 
 for filename in filepath:
@@ -19,4 +19,9 @@ for filename in filepath:
 
     day = datetime.now().strftime('%Y-%m-%d')
     # test to see if it prints out the yyyy-mm-dd
-    print(day)
+    #print(day)
+
+    # create new file name
+    new_filedate_name = f'{filename[:-4]}-{day}.txt'
+    #print(new_filedate_name)
+
