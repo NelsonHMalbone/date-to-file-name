@@ -28,3 +28,6 @@ for filename in filepath:
     # create the new file path
     new_filepath = os.path.join(directory,new_filedate_name)
 
+    os.rename(filepath,new_filepath)
+    print(f'rename {filepath} to {new_filepath}')
+
