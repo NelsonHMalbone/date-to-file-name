@@ -41,6 +41,24 @@ then printing out a statement saying that the old file name is changed to
 new file name
 </p>
 
+# Project 
+## 10/16/2024
+<p>
+created a program to run normally 
+the only thing we had to change from the last one was the 
+changing the file name from a.txt to a-yyyy-mm-dd
+
+had to do some research to get the symbols
+for the yyyy mm and dd used w3 school for that
+
+
+</p>
+
+
+### to run program
+<p>
+just run the program normally
+</p>
 
 # Credits
 <p>
