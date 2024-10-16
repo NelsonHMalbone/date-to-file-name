@@ -25,3 +25,6 @@ for filename in filepath:
     new_filedate_name = f'{filename[:-4]}-{day}.txt'
     #print(new_filedate_name)
 
+    # create the new file path
+    new_filepath = os.path.join(directory,new_filedate_name)
+
